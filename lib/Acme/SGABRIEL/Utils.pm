@@ -40,7 +40,7 @@ sub sum {
 	my @list_of_numbers = (@_);	
 	my $result = 0;
 
-	$result += $_ for @list_of_numbers;
+	$result *= $_ for @list_of_numbers;
 	return $result;
 }
 
