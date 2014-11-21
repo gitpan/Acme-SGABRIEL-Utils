@@ -1,20 +1,16 @@
-package Acme::SGABRIEL::Utils;
+package Tie::Cycle;
 
 use 5.006;
 use strict;
 use warnings FATAL => 'all';
 
-use Exporter qw( import );
-our @EXPORT = qw( sum );
-
 =head1 NAME
 
-Acme::SGABRIEL::Utils - Provides a simple experimentation module per Intermediate Perl, Chapter 20, Exercises 1-4
+Tie::Cycle - Test an erroneous upload (Intermediate Perl, Exercise )
 
 =head1 VERSION
 
 Version 0.01
-See the Acme::SGABRIEL::Utils::Test module's VERSION block for details
 
 =cut
 
@@ -23,26 +19,21 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Just provides the 'sum' subroutine
-
-=head1 EXPORT
-
-sum (default)
+Does nothing useful (to save space rather than copy the legit code)
 
 =head1 SUBROUTINES/METHODS
 
-=head2 sub sum( number, number, ...)
+=head2 do_nothing (no parameters allowed)
+
+Does nothing, successfully
 
 =cut
 
-sub sum {
-
-	my @list_of_numbers = (@_);	
-	my $result = 0;
-
-	$result += $_ for @list_of_numbers;
-	return $result;
+sub do_nothing()
+{
+	return 1;
 }
+
 
 =head1 AUTHOR
 
@@ -61,7 +52,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Acme::SGABRIEL::Utils
+    perldoc Tie::Cycle
 
 
 You can also look for information at:
@@ -89,13 +80,11 @@ L<http://search.cpan.org/dist/Acme::SGABRIEL::Utils/>
 
 =head1 ACKNOWLEDGEMENTS
 
-Me, Myself, and I
-Brian d Foy - Apparently people are mad because you told people to upload to CPAN in your book 'Intermediate Perl'
-              so if someone is mad this experimental module is here, go yell at him for it :)
+See the book "Intermediate Perl" by Brian d Foy, etc for the reasoning for this module
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2014 Gabriel Sharp     ...as if (ahem) ..as is
+Copyright 2014 Gabriel Sharp.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
@@ -136,4 +125,4 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Acme::SGABRIEL::Utils
+1; # End of Tie::Cycle
